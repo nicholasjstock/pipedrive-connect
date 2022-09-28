@@ -6,7 +6,8 @@ module Pipedrive
     include Merge
 
     has_many :products, class_name: "Product"
-
+    has_many :persons, class_name: "Person"
+    
     # POST /deals/:id/products
     # Add a product to this deal
     def add_product(product, params)

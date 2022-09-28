@@ -18,6 +18,9 @@ RSpec.describe Pipedrive::Deal, type: :resource do
     it "responds to products" do
       expect(subject).to respond_to(:products)
     end
+    it "responds to deals" do
+      expect(subject).to respond_to(:persons)
+    end
     it "responds to merge" do
       expect(subject).to respond_to(:merge)
     end
